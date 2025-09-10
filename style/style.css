@@ -1,3 +1,238 @@
+/* Modern Gradient Card Styles for Profile Section */
+.modern-gradient-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    background-image: 
+        radial-gradient(at 20% 30%, rgba(64, 93, 230, 0.2) 0px, transparent 50%),
+        radial-gradient(at 80% 70%, rgba(131, 58, 180, 0.2) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(253, 29, 29, 0.1) 0px, transparent 50%);
+    box-shadow: 0 8px 32px 0 rgba(60, 60, 120, 0.15);
+    border-radius: 24px;
+    padding: 40px 32px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: visible;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modern-card {
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px 0 rgba(60, 60, 120, 0.10);
+    padding: 32px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px 0 rgba(60, 60, 120, 0.2);
+}
+
+.gradient-ring {
+    background: linear-gradient(135deg, #405de6, #833ab4, #fd1d1d);
+    background-size: 300% 300%;
+    animation: gradientAnimation 3s ease infinite;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px 0 rgba(64,93,230,0.25);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 8px 32px 0 rgba(64,93,230,0.18);
+}
+.shadow-md {
+    box-shadow: 0 4px 16px 0 rgba(64,93,230,0.12);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #405de6, #833ab4, #fd1d1d);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: textGradient 4s linear infinite;
+}
+
+@keyframes textGradient {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.gradient-btn {
+    background: linear-gradient(90deg, #405de6, #833ab4, #fd1d1d);
+    background-size: 200% auto;
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 15px 0 rgba(64,93,230,0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gradient-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #fd1d1d, #833ab4, #405de6);
+    background-size: 200% auto;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gradient-btn:hover {
+    box-shadow: 0 8px 20px 0 rgba(253,29,29,0.25);
+    transform: translateY(-2px);
+}
+
+.gradient-btn:hover::before {
+    opacity: 1;
+}
+
+.modern-stat {
+    background: rgba(240,240,255,0.5);
+    border-radius: 12px;
+    padding: 12px 24px;
+    margin-right: 12px;
+    box-shadow: 0 4px 15px 0 rgba(64,93,230,0.12);
+    display: inline-block;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.modern-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px 0 rgba(64,93,230,0.18);
+    background: rgba(240,240,255,0.7);
+}
+
+.modern-bio {
+    background: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-top: 18px;
+    box-shadow: 0 4px 15px 0 rgba(64,93,230,0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-bio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #405de6, #833ab4, #fd1d1d);
+    z-index: 1;
+}
+
+.gradient-link {
+    color: #405de6;
+    background: linear-gradient(90deg, #405de6, #833ab4, #fd1d1d);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.gradient-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #405de6, #833ab4, #fd1d1d);
+    background-size: 200% auto;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.gradient-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.modern-highlights {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.modern-highlights::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        rgba(64,93,230,0), 
+        rgba(64,93,230,0.3), 
+        rgba(131,58,180,0.3), 
+        rgba(253,29,29,0.3), 
+        rgba(253,29,29,0)
+    );
+}
+
+.modern-highlight {
+    background: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px 0 rgba(64,93,230,0.15);
+    padding: 20px 16px 12px 16px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modern-highlight:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px 0 rgba(64,93,230,0.25);
+    background: linear-gradient(135deg, rgba(224, 231, 255, 0.6), rgba(248, 250, 252, 0.8));
+}
 /* style.css */
 * {
     margin: 0;
@@ -22,6 +257,11 @@ body {
     background-color: var(--background-color);
     color: var(--text-primary);
     line-height: 1.6;
+    background-image: 
+        radial-gradient(at 10% 10%, rgba(64, 93, 230, 0.03) 0px, transparent 50%),
+        radial-gradient(at 90% 20%, rgba(131, 58, 180, 0.03) 0px, transparent 50%),
+        radial-gradient(at 50% 80%, rgba(253, 29, 29, 0.03) 0px, transparent 50%);
+    background-attachment: fixed;
 }
 
 .container {
