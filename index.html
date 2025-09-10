@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Nguyễn Anh</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -20,22 +20,23 @@
                 <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                 <a href="#" class="nav-link"><i class="fas fa-plus-square"></i></a>
                 <a href="#" class="nav-link"><i class="fas fa-heart"></i></a>
-                <div class="profile-avatar-nav" id="profileAvatarNav"></div>
-                   <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile"> -->
+                <!-- Profile Avatar with Popup Trigger -->
+                <div class="profile-avatar-nav" id="profileAvatarNav">
+                    <img src="./avt.png" alt="Profile">
                 </div>
                 <!-- Profile Popup -->
-                <div class="profile-popup" id="profilePopup" style="display:none; position:absolute; top:60px; right:20px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); border-radius:8px; padding:16px; z-index:100;">
-                    <div style="display:flex; align-items:center;">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Profile" style="border-radius:50%; margin-right:12px;">
+                <div class="profile-popup glass-card" id="profilePopup">
+                    <div style="display:flex; align-items:center; margin-bottom:var(--spacing-md);">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Profile" style="border-radius:50%; margin-right:var(--spacing-md);">
                         <div>
                             <strong>your_portfolio</strong><br>
-                            <span style="font-size:13px; color:#888;">Full Stack Developer</span>
+                            <span style="font-size:13px; color:var(--text-muted);">Full Stack Developer</span>
                         </div>
                     </div>
-                    <hr style="margin:12px 0;">
-                    <a href="#" style="display:block; margin-bottom:8px; color:#333; text-decoration:none;">Trang cá nhân</a>
-                    <a href="#" style="display:block; margin-bottom:8px; color:#333; text-decoration:none;">Cài đặt</a>
-                    <a href="#" style="display:block; color:#e74c3c; text-decoration:none;">Đăng xuất</a>
+                    <hr style="border:none; height:1px; background:rgba(0,0,0,0.1); margin:var(--spacing-sm) 0;">
+                    <a href="#"><i class="fas fa-user-circle" style="margin-right:var(--spacing-sm);"></i> Trang cá nhân</a>
+                    <a href="#"><i class="fas fa-cog" style="margin-right:var(--spacing-sm);"></i> Cài đặt</a>
+                    <a href="#"><i class="fas fa-sign-out-alt" style="margin-right:var(--spacing-sm);"></i> Đăng xuất</a>
                 </div>
             </nav>
         </div>
@@ -45,71 +46,70 @@
     <main class="main">
         <div class="container">
             <!-- Profile Section -->
-            <section class="profile-section modern-gradient-card">
-                <div class="profile-header modern-card">
+            <section class="profile-section">
+                <div class="profile-header glass-card">
                     <div class="profile-avatar">
-                        <div class="avatar-ring gradient-ring">
-                            <img src="./avt.png" alt="Profile Picture" class="avatar-img shadow-lg">
+                        <div class="avatar-ring">
+                            <img src="./avt.png" alt="Profile Picture" class="avatar-img">
                         </div>
                     </div>
                     <div class="profile-info">
                         <div class="profile-header-top">
-                            <h1 class="username gradient-text">NGUYỄN ANH QUÂN</h1>
+                            <h1 class="username">NGUYỄN ANH QUÂN</h1>
                             <div class="profile-actions">
-                                <button class="btn btn-primary gradient-btn">Theo dõi</button>
-                                <button class="btn btn-secondary gradient-btn">Nhắn tin</button>
-                                <button class="btn btn-icon gradient-btn"><i class="fas fa-ellipsis-h"></i></button>
+                                <button class="btn btn-primary">Theo dõi</button>
+                                <button class="btn btn-secondary">Nhắn tin</button>
+                                <button class="btn btn-icon"><i class="fas fa-ellipsis-h"></i></button>
                             </div>
                         </div>
                         <div class="profile-stats">
-                            <div class="stat modern-stat">
-                                <span class="stat-number gradient-text">24</span>
+                            <div class="stat">
+                                <span class="stat-number">24</span>
                                 <span class="stat-label">bài viết</span>
                             </div>
-                            <div class="stat modern-stat">
-                                <span class="stat-number gradient-text">1.2k</span>
+                            <div class="stat">
+                                <span class="stat-number">1.2k</span>
                                 <span class="stat-label">người theo dõi</span>
                             </div>
-                            <div class="stat modern-stat">
-                                <span class="stat-number gradient-text">856</span>
+                            <div class="stat">
+                                <span class="stat-number">856</span>
                                 <span class="stat-label">đang theo dõi</span>
                             </div>
                         </div>
-                        <div class="profile-bio modern-bio">
-                            <h2 class="bio-name gradient-text">Full Stack Developer</h2>
+                        <div class="profile-bio">
+                            <h2 class="bio-name">Full Stack Developer</h2>
                             <p class="bio-text">🚀 Passionate Web Developer<br>
-                                💻 React | Node.js | Python<br>
+                                💻 React | Node.js | Nest.js<br>
                                 🎯 Building amazing digital experiences<br>
                                 📧 contact@yourportfolio.com</p>
-                            <a href="#" class="bio-link gradient-link">yourportfolio.com</a>
                         </div>
                     </div>
                 </div>
                 <!-- Highlights -->
-                <div class="highlights modern-highlights">
-                    <div class="highlight-item modern-highlight">
-                        <div class="highlight-ring gradient-ring">
-                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=100&h=100&fit=crop" alt="Projects" class="shadow-md">
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="./image/1.jpg" alt="Projects">
                         </div>
-                        <span class="highlight-label gradient-text">Dự án</span>
+                        <span class="highlight-label">Dự án</span>
                     </div>
-                    <div class="highlight-item modern-highlight">
-                        <div class="highlight-ring gradient-ring">
-                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=100&h=100&fit=crop" alt="Certificates" class="shadow-md">
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="./image/2.jpg" alt="Projects">
                         </div>
-                        <span class="highlight-label gradient-text">Chứng chỉ</span>
+                        <span class="highlight-label">Chứng chỉ</span>
                     </div>
-                    <div class="highlight-item modern-highlight">
-                        <div class="highlight-ring gradient-ring">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop" alt="Skills" class="shadow-md">
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="./image/3.jpg" alt="Projects">
                         </div>
-                        <span class="highlight-label gradient-text">Kỹ năng</span>
+                        <span class="highlight-label">Kỹ năng</span>
                     </div>
-                    <div class="highlight-item modern-highlight">
-                        <div class="highlight-ring gradient-ring">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=100&h=100&fit=crop" alt="About" class="shadow-md">
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="./image/4.jpg" alt="Projects">
                         </div>
-                        <span class="highlight-label gradient-text">Về tôi</span>
+                        <span class="highlight-label">Về tôi</span>
                     </div>
                 </div>
             </section>
@@ -136,7 +136,7 @@
             <section class="posts-grid" id="posts-content">
                 <!-- Project Posts -->
                 <div class="post-item" data-type="project">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop" alt="E-commerce Website">
+                    <img src="./image/8.jfif" alt="E-commerce Website">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 124</span>
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="post-item" data-type="certificate">
-                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=400&fit=crop" alt="React Certificate">
+                    <img src="./image/4.jpg" alt="React Certificate">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 89</span>
@@ -159,7 +159,7 @@
                 </div>
 
                 <div class="post-item" data-type="project">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop" alt="Mobile App">
+                    <img src="./image/6.jpg" alt="Mobile App">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 156</span>
@@ -179,7 +179,7 @@
                 </div>
 
                 <div class="post-item" data-type="certificate">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="JavaScript Certificate">
+                    <img src="./image/3.jpg" alt="JavaScript Certificate">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 67</span>
@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="post-item" data-type="project">
-                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=400&fit=crop" alt="Web Application">
+                    <img src="./avt.png" alt="Web Application">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 143</span>
@@ -212,7 +212,7 @@
                 </div>
 
                 <div class="post-item" data-type="certificate">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop" alt="Node.js Certificate">
+                    <img src="./image/7.jfif" alt="Node.js Certificate">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 92</span>
@@ -225,7 +225,7 @@
                 </div>
 
                 <div class="post-item" data-type="project">
-                    <img src="https://images.unsplash.com/photo-1486312338219-ce68e2c6b696?w=400&h=400&fit=crop" alt="AI Project">
+                    <img src="./image/5.jpg" alt="AI Project">
                     <div class="post-overlay">
                         <div class="post-stats">
                             <span><i class="fas fa-heart"></i> 234</span>
@@ -239,7 +239,7 @@
 
     <!-- Modal for Post Details -->
     <div class="modal" id="postModal">
-        <div class="modal-content">
+        <div class="modal-content glass-card" style="overflow:hidden;">
             <span class="close">&times;</span>
             <div class="modal-body">
                 <div class="modal-image">
@@ -266,7 +266,229 @@
             </div>
         </div>
     </div>
+    <!-- Chat Messager -->
+<!-- Add this code just before the closing </body> tag in index2.html -->
 
+<!-- Message Popup Container -->
+<div class="message-popup-container">
+  <div class="message-popup-toggle" id="messageToggle">
+    <i class="fas fa-comment-dots"></i>
+    <span class="message-count">3</span>
+  </div>
+  
+  <div class="message-popup-panel glass-card" id="messagePanel">
+    <div class="message-header">
+      <h3>Messages</h3>
+      <div class="message-actions">
+        <button class="message-action-btn"><i class="fas fa-ellipsis-h"></i></button>
+        <button class="message-action-btn"><i class="fas fa-expand-alt"></i></button>
+        <button class="message-action-btn" id="messageClose"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    
+    <div class="message-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search messages...">
+    </div>
+    
+    <div class="message-list">
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot online"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">John Doe <span class="message-time">12:42</span></div>
+          <div class="message-text">Hey, I checked your latest React project. It looks amazing!</div>
+        </div>
+      </div>
+      
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot online"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Sarah Miller <span class="message-time">10:15</span></div>
+          <div class="message-text">Would you be interested in collaborating on a new project?</div>
+        </div>
+      </div>
+      
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot away"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Tech Company <span class="message-time">Yesterday</span></div>
+          <div class="message-text">We'd like to schedule an interview for the senior developer position.</div>
+        </div>
+      </div>
+      
+      <div class="message-item">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot offline"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Alex Johnson <span class="message-time">Yesterday</span></div>
+          <div class="message-text">Thanks for your help with the Node.js issue!</div>
+        </div>
+      </div>
+      
+      <div class="message-item">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot offline"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Emma Wilson <span class="message-time">2 days ago</span></div>
+          <div class="message-text">I've shared your portfolio with our team. They were impressed!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Active Chat Bubble -->
+  <div class="chat-bubble glass-card" id="chatBubble">
+    <div class="chat-header">
+      <div class="chat-user">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=40&h=40&fit=crop&crop=face" alt="John Doe">
+        <div>
+          <div class="chat-name">John Doe</div>
+          <div class="chat-status">Active now</div>
+        </div>
+      </div>
+      <div class="chat-actions">
+        <button class="chat-action-btn"><i class="fas fa-phone"></i></button>
+        <button class="chat-action-btn"><i class="fas fa-video"></i></button>
+        <button class="chat-action-btn" id="chatMinimize"><i class="fas fa-minus"></i></button>
+      </div>
+    </div>
+    
+    <div class="chat-messages">
+      <div class="chat-date">Today</div>
+      
+      <div class="message-received">
+        <p>Hey, I checked your latest React project. It looks amazing!</p>
+        <span class="message-timestamp">12:42</span>
+      </div>
+      
+      <div class="message-sent">
+        <p>Thanks! I spent a lot of time on the animations.</p>
+        <span class="message-timestamp">12:45</span>
+      </div>
+      
+      <div class="message-received">
+        <p>The UI is very clean and intuitive. How did you handle the state management?</p>
+        <span class="message-timestamp">12:47</span>
+      </div>
+      
+      <div class="message-sent">
+        <p>I used Redux for global state and React Context for component-specific state.</p>
+        <span class="message-timestamp">12:50</span>
+      </div>
+      
+      <div class="message-received typing">
+        <div class="typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <button class="chat-input-btn"><i class="fas fa-plus-circle"></i></button>
+      <input type="text" placeholder="Type a message...">
+      <button class="chat-input-btn"><i class="far fa-laugh"></i></button>
+      <button class="chat-input-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+<!-- Image Upload Popup -->
+<div class="upload-popup-container" id="uploadPopupContainer">
+  <div class="upload-popup glass-card">
+    <div class="upload-header">
+      <h3>Tạo bài viết mới</h3>
+      <button class="upload-close-btn" id="uploadCloseBtn"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <div class="upload-content">
+      <div class="upload-user">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Profile">
+        <span>your_portfolio</span>
+      </div>
+      
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-placeholder" id="uploadPlaceholder">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Kéo ảnh vào đây hoặc nhấp để chọn từ thiết bị</p>
+          <span>Hỗ trợ JPG, PNG, GIF (Tối đa 10MB)</span>
+          <button class="btn btn-primary upload-btn">Chọn từ thiết bị</button>
+        </div>
+        
+        <div class="upload-preview" id="uploadPreview">
+          <img id="previewImage" src="" alt="Preview">
+          <button class="upload-change-btn" id="uploadChangeBtn"><i class="fas fa-exchange-alt"></i></button>
+        </div>
+        
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+      </div>
+      
+      <div class="upload-form">
+        <textarea placeholder="Viết mô tả cho bài viết..." rows="3"></textarea>
+        
+        <div class="upload-options">
+          <div class="upload-option-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Thêm vị trí</span>
+          </div>
+          <div class="upload-option-item">
+            <i class="fas fa-tag"></i>
+            <span>Tag người khác</span>
+          </div>
+          <div class="upload-option-item">
+            <i class="fas fa-sliders-h"></i>
+            <span>Bộ lọc</span>
+          </div>
+        </div>
+        
+        <div class="upload-categories">
+          <p>Thể loại bài viết:</p>
+          <div class="category-options">
+            <label class="category-option">
+              <input type="radio" name="category" value="project" checked>
+              <span class="checkmark"></span>
+              <span>Dự án</span>
+            </label>
+            <label class="category-option">
+              <input type="radio" name="category" value="certificate">
+              <span class="checkmark"></span>
+              <span>Chứng chỉ</span>
+            </label>
+            <label class="category-option">
+              <input type="radio" name="category" value="skill">
+              <span class="checkmark"></span>
+              <span>Kỹ năng</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="upload-footer">
+      <button class="btn btn-secondary" id="uploadCancelBtn">Hủy</button>
+      <button class="btn btn-primary" id="uploadSubmitBtn">Đăng bài</button>
+    </div>
+  </div>
+</div>
+
+<!-- Upload Trigger Button (Floating) -->
+<button class="floating-upload-btn" id="floatingUploadBtn">
+  <i class="fas fa-plus"></i>
+</button>
     <script src="./script/script.js"></script>
+     <script src="./script/upload.js"></script>
 </body>
 </html>
