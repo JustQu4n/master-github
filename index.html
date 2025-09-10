@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nguyễn Anh Quân</title>
+    <title>Portfolio - Nguyễn Anh</title>
     <link rel="stylesheet" href="./style/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -20,8 +20,22 @@
                 <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                 <a href="#" class="nav-link"><i class="fas fa-plus-square"></i></a>
                 <a href="#" class="nav-link"><i class="fas fa-heart"></i></a>
-                <div class="profile-avatar-nav">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile">
+                <div class="profile-avatar-nav" id="profileAvatarNav"></div>
+                   <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile"> -->
+                </div>
+                <!-- Profile Popup -->
+                <div class="profile-popup" id="profilePopup" style="display:none; position:absolute; top:60px; right:20px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); border-radius:8px; padding:16px; z-index:100;">
+                    <div style="display:flex; align-items:center;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Profile" style="border-radius:50%; margin-right:12px;">
+                        <div>
+                            <strong>your_portfolio</strong><br>
+                            <span style="font-size:13px; color:#888;">Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <hr style="margin:12px 0;">
+                    <a href="#" style="display:block; margin-bottom:8px; color:#333; text-decoration:none;">Trang cá nhân</a>
+                    <a href="#" style="display:block; margin-bottom:8px; color:#333; text-decoration:none;">Cài đặt</a>
+                    <a href="#" style="display:block; color:#e74c3c; text-decoration:none;">Đăng xuất</a>
                 </div>
             </nav>
         </div>
