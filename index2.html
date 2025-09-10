@@ -267,7 +267,146 @@
             </div>
         </div>
     </div>
+    <!-- Chat Messager -->
+<!-- Add this code just before the closing </body> tag in index2.html -->
 
+<!-- Message Popup Container -->
+<div class="message-popup-container">
+  <div class="message-popup-toggle" id="messageToggle">
+    <i class="fas fa-comment-dots"></i>
+    <span class="message-count">3</span>
+  </div>
+  
+  <div class="message-popup-panel glass-card" id="messagePanel">
+    <div class="message-header">
+      <h3>Messages</h3>
+      <div class="message-actions">
+        <button class="message-action-btn"><i class="fas fa-ellipsis-h"></i></button>
+        <button class="message-action-btn"><i class="fas fa-expand-alt"></i></button>
+        <button class="message-action-btn" id="messageClose"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    
+    <div class="message-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search messages...">
+    </div>
+    
+    <div class="message-list">
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot online"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">John Doe <span class="message-time">12:42</span></div>
+          <div class="message-text">Hey, I checked your latest React project. It looks amazing!</div>
+        </div>
+      </div>
+      
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot online"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Sarah Miller <span class="message-time">10:15</span></div>
+          <div class="message-text">Would you be interested in collaborating on a new project?</div>
+        </div>
+      </div>
+      
+      <div class="message-item unread">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot away"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Tech Company <span class="message-time">Yesterday</span></div>
+          <div class="message-text">We'd like to schedule an interview for the senior developer position.</div>
+        </div>
+      </div>
+      
+      <div class="message-item">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot offline"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Alex Johnson <span class="message-time">Yesterday</span></div>
+          <div class="message-text">Thanks for your help with the Node.js issue!</div>
+        </div>
+      </div>
+      
+      <div class="message-item">
+        <div class="message-avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="User">
+          <span class="status-dot offline"></span>
+        </div>
+        <div class="message-content">
+          <div class="message-name">Emma Wilson <span class="message-time">2 days ago</span></div>
+          <div class="message-text">I've shared your portfolio with our team. They were impressed!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Active Chat Bubble -->
+  <div class="chat-bubble glass-card" id="chatBubble">
+    <div class="chat-header">
+      <div class="chat-user">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=40&h=40&fit=crop&crop=face" alt="John Doe">
+        <div>
+          <div class="chat-name">John Doe</div>
+          <div class="chat-status">Active now</div>
+        </div>
+      </div>
+      <div class="chat-actions">
+        <button class="chat-action-btn"><i class="fas fa-phone"></i></button>
+        <button class="chat-action-btn"><i class="fas fa-video"></i></button>
+        <button class="chat-action-btn" id="chatMinimize"><i class="fas fa-minus"></i></button>
+      </div>
+    </div>
+    
+    <div class="chat-messages">
+      <div class="chat-date">Today</div>
+      
+      <div class="message-received">
+        <p>Hey, I checked your latest React project. It looks amazing!</p>
+        <span class="message-timestamp">12:42</span>
+      </div>
+      
+      <div class="message-sent">
+        <p>Thanks! I spent a lot of time on the animations.</p>
+        <span class="message-timestamp">12:45</span>
+      </div>
+      
+      <div class="message-received">
+        <p>The UI is very clean and intuitive. How did you handle the state management?</p>
+        <span class="message-timestamp">12:47</span>
+      </div>
+      
+      <div class="message-sent">
+        <p>I used Redux for global state and React Context for component-specific state.</p>
+        <span class="message-timestamp">12:50</span>
+      </div>
+      
+      <div class="message-received typing">
+        <div class="typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <button class="chat-input-btn"><i class="fas fa-plus-circle"></i></button>
+      <input type="text" placeholder="Type a message...">
+      <button class="chat-input-btn"><i class="far fa-laugh"></i></button>
+      <button class="chat-input-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
     <script src="./script/script2.js"></script>
 </body>
 </html>
