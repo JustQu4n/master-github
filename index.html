@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Instagram Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-instagram"></i>
+                <span>Portfolio</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-plus-square"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-heart"></i></a>
+                <div class="profile-avatar-nav">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <div class="avatar-ring">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Profile Picture" class="avatar-img">
+                        </div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <div class="profile-header-top">
+                            <h1 class="username">your_portfolio</h1>
+                            <div class="profile-actions">
+                                <button class="btn btn-primary">Theo dõi</button>
+                                <button class="btn btn-secondary">Nhắn tin</button>
+                                <button class="btn btn-icon"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">bài viết</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1.2k</span>
+                                <span class="stat-label">người theo dõi</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">856</span>
+                                <span class="stat-label">đang theo dõi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-bio">
+                            <h2 class="bio-name">Full Stack Developer</h2>
+                            <p class="bio-text">🚀 Passionate Web Developer<br>
+                            💻 React | Node.js | Python<br>
+                            🎯 Building amazing digital experiences<br>
+                            📧 contact@yourportfolio.com</p>
+                            <a href="#" class="bio-link">yourportfolio.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlights -->
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=100&h=100&fit=crop" alt="Projects">
+                        </div>
+                        <span class="highlight-label">Dự án</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=100&h=100&fit=crop" alt="Certificates">
+                        </div>
+                        <span class="highlight-label">Chứng chỉ</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop" alt="Skills">
+                        </div>
+                        <span class="highlight-label">Kỹ năng</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-ring">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=100&h=100&fit=crop" alt="About">
+                        </div>
+                        <span class="highlight-label">Về tôi</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Tabs -->
+            <section class="content-tabs">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="posts">
+                        <i class="fas fa-th"></i>
+                        <span>BÀI VIẾT</span>
+                    </button>
+                    <button class="tab-btn" data-tab="reels">
+                        <i class="fas fa-play"></i>
+                        <span>REELS</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tagged">
+                        <i class="fas fa-user-tag"></i>
+                        <span>ĐÃ GẮN THẺ</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Posts Grid -->
+            <section class="posts-grid" id="posts-content">
+                <!-- Project Posts -->
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop" alt="E-commerce Website">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 124</span>
+                            <span><i class="fas fa-comment"></i> 8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="certificate">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=400&fit=crop" alt="React Certificate">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 89</span>
+                            <span><i class="fas fa-comment"></i> 5</span>
+                        </div>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop" alt="Mobile App">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 156</span>
+                            <span><i class="fas fa-comment"></i> 12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop" alt="Dashboard Design">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 201</span>
+                            <span><i class="fas fa-comment"></i> 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="certificate">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="JavaScript Certificate">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 67</span>
+                            <span><i class="fas fa-comment"></i> 3</span>
+                        </div>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop" alt="Data Visualization">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 178</span>
+                            <span><i class="fas fa-comment"></i> 9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=400&fit=crop" alt="Web Application">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 143</span>
+                            <span><i class="fas fa-comment"></i> 7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="certificate">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop" alt="Node.js Certificate">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 92</span>
+                            <span><i class="fas fa-comment"></i> 4</span>
+                        </div>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-item" data-type="project">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68e2c6b696?w=400&h=400&fit=crop" alt="AI Project">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 234</span>
+                            <span><i class="fas fa-comment"></i> 18</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal for Post Details -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-header">
+                        <div class="modal-user">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User">
+                            <span>your_portfolio</span>
+                        </div>
+                        <button class="modal-follow">Theo dõi</button>
+                    </div>
+                    <div class="modal-caption" id="modalCaption">
+                        <p><strong>your_portfolio</strong> Dự án mới nhất của tôi - Ứng dụng web full-stack với React và Node.js</p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="action-btn"><i class="far fa-heart"></i></button>
+                        <button class="action-btn"><i class="far fa-comment"></i></button>
+                        <button class="action-btn"><i class="far fa-paper-plane"></i></button>
+                        <button class="action-btn bookmark"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
